@@ -1,0 +1,128 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $white;
+  margin: 0;
+  padding: 0;
+  color: $darkGray;
+  font-family: 'Spartan', sans-serif;
+  font-size: $font-sm;
+  height: 100vh;
+}
+
+a,
+a:focus,
+a:visited {
+  text-decoration: none;
+  color: $white;
+  font-size: $font-sm;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $black;
+}
+
+h1 {
+  font-size: $font-lg;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0;
+  margin-bottom: rem(20px);
+
+  @include breakpoint-up(large) {
+    font-size: $font-xlg;
+    line-height: 1;
+    margin-bottom: rem(30px);
+  }
+}
+
+p {
+  line-height: 1.5;
+  margin: 0;
+}
+
+.container {
+  max-width: rem(1440px);
+  margin: 0 auto;
+
+  &--pall {
+    padding-top: rem(48px);
+    padding-right: rem(30px);
+    padding-bottom: rem(48px);
+    padding-left: rem(30px);
+
+    @include breakpoint-up(large) {
+      padding-top: rem(64px);
+      padding-right: rem(64px);
+      padding-bottom: rem(64px);
+      padding-left: rem(64px);
+    }
+  }
+  &--py {
+    padding-top: rem(48px);
+    padding-bottom: rem(48px);
+
+    @include breakpoint-up(large) {
+      padding-top: rem(64px);
+      padding-bottom: rem(64px);
+    }
+  }
+  &--px {
+    padding-right: rem(24px);
+    padding-left: rem(24px);
+
+    @include breakpoint-up(large) {
+      padding-right: rem(64px);
+      padding-left: rem(64px);
+    }
+  }
+}
+
+button,
+.button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.banner-btn {
+  background-color: $black;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+  color: $white;
+  transition: background 150ms ease-in-out;
+
+  &:hover {
+    background: $veryDarkGray;
+  }
+}
+.hide-for-desktop {
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}

@@ -1,0 +1,220 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  @include breakpoint-up(large) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__hero-image {
+    position: relative;
+
+    height: 360px;
+
+    @include breakpoint-up(large) {
+      flex: 1 1 58%;
+      // height: 535px;
+      height: 70vh;
+    }
+
+    .img-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      article {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: all 0.3s linear;
+
+        &.activeSlide {
+          opacity: 1;
+          transform: translateX(0);
+        }
+        &.lastSlide {
+          transform: translateX(-100%);
+        }
+        &.nextSlide {
+          transform: translateX(100%);
+        }
+      }
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__hero-description {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 410px;
+    overflow: hidden;
+
+    @include breakpoint-up(large) {
+      flex: 1 1 42%;
+      // min-height: 535px;
+      height: 70vh;
+    }
+
+    article {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      //   height: 535px;
+      //   padding: 0px rem(100px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.8s linear;
+
+      @include breakpoint-up(medium) {
+        text-align: center;
+        padding: 0px rem(150px);
+      }
+
+      @include breakpoint-up(large) {
+        text-align: left;
+        padding: 0px rem(100px);
+      }
+
+      h1 {
+        transition: opacity 0.8s linear, color 0.8s linear;
+      }
+      &.activeSlide {
+        opacity: 1;
+        h1 {
+          opacity: 1;
+        }
+        // transform: translateX(0);
+      }
+      &.lastSlide {
+        h1 {
+          opacity: 0;
+          color: $white;
+        }
+        // transform: translateX(-100%);
+      }
+      &.nextSlide {
+        h1 {
+          color: $white;
+          opacity: 0;
+        }
+        // transform: translateX(100%);
+      }
+    }
+  }
+
+  &__shop-link {
+    color: $black;
+    margin-top: rem(50px);
+
+    @include breakpoint-up(large) {
+      margin-top: rem(30px);
+    }
+
+    a {
+      color: $black;
+      text-transform: uppercase;
+      letter-spacing: 0.7rem;
+      font-weight: 600;
+      transition: color 150ms ease-in-out;
+      span {
+        margin-right: rem(35px);
+      }
+
+      svg > path {
+        transition: fill 150ms ease-in-out;
+      }
+
+      &:hover {
+        color: $darkGray;
+
+        svg > path {
+          fill: $darkGray;
+        }
+      }
+    }
+  }
+
+  &__hero-navbtns {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: rem(60px);
+    width: rem(120px);
+    z-index: 2;
+
+    @include breakpoint-up(large) {
+      left: 100%;
+      width: rem(160px);
+      height: rem(80px);
+    }
+    button {
+      cursor: pointer;
+      width: 50%;
+      height: 100%;
+      color: $white;
+      background-color: $black;
+      border: none;
+      transition: all 150ms ease-in-out;
+
+      img {
+        width: 30%;
+        height: 30%;
+        object-fit: cover;
+      }
+
+      &:focus {
+        outline: 0;
+      }
+
+      &:hover {
+        background-color: $veryDarkGray;
+      }
+    }
+  }
+
+  &__about {
+    // height: 265px;
+    height: 30vh;
+
+    &-image {
+      flex: 1 1 18%;
+    }
+
+    &-description {
+      flex: 1 1 30%;
+      padding-left: 50px;
+      padding-right: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .title {
+        color: $black;
+        text-transform: uppercase;
+        font-size: rem(12px);
+        font-weight: 700;
+        letter-spacing: rem(4px);
+        margin-bottom: rem(14px);
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

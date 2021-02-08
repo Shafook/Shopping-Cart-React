@@ -1,0 +1,84 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "queen panel bed",
+        "category":"bedroom",
+        "price": 10.99,
+        "image": { "fields": { "file": { "url": "/images/products/product-1.jpeg" } } },
+        "desc": "Repellendus, facilis, beatae assumenda odit quam vero, cumque exercitationem doloremque fugit nulla ipsum quod quasi officia minima ex! Doloremque nisi vero perferendis."
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "king panel bed",
+        "category":"bedroom",
+        "price": 12.99,
+        "image": { "fields": { "file": { "url": "/images/products/product-2.jpeg" } } },
+        "desc": "Tempore nulla aliquam perferendis quae obcaecati officia minus, labore, numquam ex earum impedit amet eligendi. Quasi, veritatis consectetur rerum non officiis libero."
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "single panel bed",
+        "category":"bedroom",
+        "price": 12.99,
+        "image": { "fields": { "file": { "url": "/images/products/product-3.jpeg" } } },
+        "desc": "Sed, consectetur minima provident voluptate iure culpa consequatur sint maxime quidem debitis quod, inventore aspernatur eum nam, distinctio reiciendis hic perferendis esse."
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "twin panel bed",
+        "category":"bedroom",
+        "price": 22.99,
+        "image": { "fields": { "file": { "url": "/images/products/product-4.jpeg" } } },
+        "desc": "Fugit expedita incidunt quaerat, ipsum amet corporis nesciunt facere officiis delectus dolor modi deserunt beatae a, hic unde placeat provident mollitia porro."
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "fridge",
+        "category":"kitchen",
+        "price": 88.99,
+        "image": { "fields": { "file": { "url": "/images/products/product-5.jpeg" } } },
+        "desc": "Quis, tenetur beatae sunt necessitatibus maxime possimus placeat ut ducimus tempore commodi autem? Maiores illo hic id nulla suscipit voluptatem repudiandae vitae?"
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "dresser",
+        "category":"bedroom",
+        "price": 32.99,
+        "image": { "fields": { "file": { "url": "/images/products/product-6.jpeg" } } },
+        "desc": "Quibusdam, sed. Odit nihil laboriosam corrupti earum saepe, in excepturi exercitationem molestias quas ad perferendis provident aliquam fugit illo iste, atque mollitia!"
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "couch",
+        "category":"living room",
+        "price": 45.99,
+        "image": { "fields": { "file": { "url": "/images/products/product-7.jpeg" } } },
+        "desc": "Eveniet minima iure, eos illum repellat recusandae, sint alias, unde ipsa similique quo fuga maxime omnis! Quasi iste quo placeat velit deleniti."
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "table",
+        "category":"living room",
+        "price": 33.99,
+        "image": { "fields": { "file": { "url": "/images/products/product-8.jpeg" } } },
+        "desc": "Dolore asperiores modi voluptas nemo ut inventore ipsum dignissimos omnis temporibus incidunt consectetur assumenda illo obcaecati, voluptates sunt eius, repellat a numquam?"
+      }
+    }
+  ]
+}

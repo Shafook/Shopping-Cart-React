@@ -1,0 +1,33 @@
+.product {
+  //   background-color: $black;
+  text-align: center;
+  &__image-container {
+    img {
+      width: 100%;
+
+      @include breakpoint-up(large) {
+        width: 50%;
+      }
+    }
+  }
+
+  &__image-light {
+    display: none;
+    @include breakpoint-up(large) {
+      display: inline-block;
+      opacity: 0.2;
+    }
+  }
+
+  &__info {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 800px;
+    h1 {
+      text-transform: capitalize;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+}
